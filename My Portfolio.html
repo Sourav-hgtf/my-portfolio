@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souravranjan's Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #eef2f7, #d9e4f5);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            animation: fadeDown 1s ease;
+        }
+
+        header img {
+            width: 140px;
+            border-radius: 20%;
+            border: 4px solid white;
+            margin-top: 10px;
+            transition: transform 0.4s;
+        }
+
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        header h1 {
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 22px;
+            background: white;
+            color: #0077ff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0077ff;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: #1f2a38;
+            padding: 12px;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #11110c;
+        }
+
+        /* Main */
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeUp 0.8s ease;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #0077ff;
+        }
+
+        /* Project Cards */
+        .project-card {
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            background: #f8fbff;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Skills */
+        .skill {
+            margin-bottom: 12px;
+        }
+
+        .bar {
+            background: #e0e0e0;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 10px;
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            animation: growBar 2s ease forwards;
+        }
+
+        /* Social Links */
+        .social a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #0077ff;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .social a:hover {
+            color: #00c6ff;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f2a38;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes growBar {
+            from {
+                width: 0;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        
+        <h1>Souravranjan Samal</h1>
+        <p>Aspiring Machine Learning & Deep Learning Specialist</p>
+        <img src="Portfolio.jpeg" alt="Profile Photo">
+        <br>
+        <a href="#" class="btn">Download Resume</a>
+        
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Computer Science student passionate about Machine Learning, Deep Learning, and Full Stack Development.
+                I enjoy building real-world projects like Hospital QR Emergency System and AI-based applications.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>B.Tech in Computer Science</strong></p>
+            <p>GIET University (2025 – 2029)</p>
+            <p>Subjects: DSA, ML, DL, DBMS, OS, Web Development, NLP</p>
+        </section>
+        <section id="courses">
+            <h2>Courses & Certifications</h2>
+            </ul>
+            <ul>
+                <li>
+                    <strong>Machine Learning</strong> – Completed from Coursera
+                    Topics: Supervised Learning, Regression, Classification
+                </li>
+
+                <li>
+                    <strong>Deep Learning Specialization</strong> – Online Course
+                    Topics: Neural Networks, CNN, RNN, TensorFlow
+                </li>
+
+                <li>
+                    <strong>Web Development Bootcamp</strong>
+                    Topics: HTML, CSS, JavaScript, Node.js, MongoDB
+                </li>
+
+                <li>
+                    <strong>Python for Data Science</strong>
+                    Topics: NumPy, Pandas, Matplotlib, Data Analysis
+                </li>
+
+                <li>
+                    <strong>Prompt Engineering & AI Tools</strong>
+                    Topics: AI Prompting, ChatGPT, LLM Applications
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <h3>Hospital QR Emergency System</h3>
+                <p>Full stack system to store patient data and access it via QR code during emergencies.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Machine Learning Prediction Model</h3>
+                <p>Python-based model for data prediction using scikit-learn.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>Responsive portfolio built using HTML, CSS and JavaScript.</p>
+            </div>
+
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <div class="skill">
+                <p>Java</p>
+                <div class="bar">
+                    <div class="progress" style="width:70%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>C++</p>
+                <div class="bar">
+                    <div class="progress" style="width:95%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Python</p>
+                <div class="bar">
+                    <div class="progress" style="width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="bar">
+                    <div class="progress" style="width:35%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Machine Learning</p>
+                <div class="bar">
+                    <div class="progress" style="width:75%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>HTML & CSS</p>
+                <div class="bar">
+                    <div class="progress" style="width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Deep Learning</p>
+                <div class="bar">
+                    <div class="progress" style="width:50%"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: souravranjansamal@gmail.com</p>
+            <p>Phone: +91-6370142162</p>
+
+            <div class="social">
+                <a href="https://www.linkedin.com/in/souravranjan-samal-653811217" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Sourav-hgtf" target="_blank">GitHub</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Souravranjan Samal | Portfolio</p>
+    </footer>
+
+</body>
+
+</html>
